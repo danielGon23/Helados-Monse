@@ -157,13 +157,20 @@ form div{
 input[type="submit"]{
     background: rgb(181, 234, 215);
     color: rgb(51, 175, 130);
+    cursor: pointer;
 
+}
+input[type="submit"]:hover{
+font-weight: bold;
 }
 
 input[type="reset"], input[type="button"]{
     background: rgb(253, 130, 140);
     color:#fff;
-
+    cursor: pointer;
+}
+input[type="reset"]:hover, input[type="button"]:hover{
+    font-weight: bold;
 }
 
 #finish{
@@ -173,6 +180,7 @@ input[type="reset"], input[type="button"]{
     color: rgb(51, 175, 130);
     width: 90%;
     z-index: 1;
+    cursor: pointer;
 }
 
 @media (max-width: 480px){
