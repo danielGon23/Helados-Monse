@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name='viewport' content='width-divace-width, initial-scale=1, shrink-to-fit=no'>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rowdies">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya Telivigala">
+  <link rel="shortcut icon" href="Imagenes/Sin título-2.png">
+  <title>Helados Monse</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="codigo.js">
+</head>
+
+<body>
+  <div class="barr">
+    <div class="barrOrd">
+      <a href="index.html"><img src="Imagenes/Sin título-2.png"> </a>
+
+    <p> Helados NUTRISA</p>
+  </div>
+  </div>
+  <br>
+  <div class="centro">
+    <div class="body">
+      <form>
+        <div>
+          <h1>Menú</h1>
+          <h3>Añade un producto:</h3>
+        </div>
+        <div>
+          <label for="categoria">Categoría:</label>
+          <select name="categoria" required>
+            <option value="">Seleccione Categoría …</option>
+            <option value="Helado">Helado</option>
+            <option value="Copa">Copa</option>
+          </select>
+        </div>
+        <div id="sabores">
+          <p><strong>Sabores que ofrecemos</strong></p>
+        </div>
+        <div>
+          <label for="sabor">Sabor:</label>
+          <input name="sabor" id="sabor" class="input" type="text" required>
+        </div>
+        <div>
+          <label for="cantidad">Cantidad:</label>
+          <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=100 required>
+        </div>
+        <div>
+          <strong>Tamaño:</strong><br>
+          <input type="radio" name="size" id="small" value="pequeño" checked><label for="small">Pequeño (2)</label>
+          <input type="radio" name="size" id="medium" value="mediano"><label for="medium">Mediano (5)</label>
+          <input type="radio" name="size" id="big" value="grande"><label for="big">Grande (7)</label>
+        </div>
+        <div>
+          <strong>Complementos:</strong><br>
+          <input type="checkbox" id="mani" name="mani" value="Maní"><label for="mani">Maní</label><br>
+          <input type="checkbox" id="chocolate" name="chocolate" value="Chispas de chocolate"><label
+            for="chocolate">Chispas de Chocolate</label><br>
+          <input type="checkbox" id="chispas" name="chispas" value="Chispas de Colores"><label for="chispas">Chispas de
+            Colores</label><br>
+          <input type="checkbox" id="leche" name="leche" value="Leche Condensada"><label for="leche">Leche
+            Condensada</label><br>
+        </div>
+        <div>
+          <input type="submit" id="send-button" name="send-button" class="button">
+          <input type="reset" value="Borrar" class="button">
+        </div>
+      </form>
+      <div class="img">
+      <img src="Imagenes/helado.png">
+    </div>
+      <div class="container" id="container">
+        <input type="button" id="finish" class="button" value="Completar Compra">
+      </div>
+    </div>
+  </div>
+  <br> <br>
+</body>
+<script src="codigo.js"></script>
+<footer>
+
+  <div class="pieOrd">
+     <p> &copy; Derechos Reservados - Helados Nutrisa 2022 </p>
+<p>BY: Monserrat Cerrito Jiménez</p>
+     <div>
+        <p>Siguenos en nuestras redes sociales</p>
+        <br>
+        <div class="just">
+           <i class='bx bxl-twitter'></i>
+           <i class='bx bxl-facebook-circle'></i>
+           <i class='bx bxl-instagram'></i>
+           <i class='bx bxl-youtube'></i>
+        </div>
+     </div>
+  </div>
+</footer>
+</html>
